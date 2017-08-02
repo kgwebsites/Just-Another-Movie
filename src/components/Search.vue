@@ -1,9 +1,9 @@
 <template>
     <form class="row mb-3" @submit.prevent="newSearch(search)">
-        <div class="col-8 col-sm-10 c">
+        <div class="col-8 col-sm-10">
             <input class="form-control" v-bind:value="search" v-model="search" placeholder="Search For Movie">
         </div>
-        <div class="col-8 col-sm-2">
+        <div class="col-4 col-sm-2">
             <button class="btn btn-success col-12">Search</button>
         </div>
         <div v-if="errors && errors.length">
