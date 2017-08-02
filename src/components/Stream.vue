@@ -23,7 +23,7 @@
                                     <img v-if="poster_path" :src="'https://image.tmdb.org/t/p/w185/' + poster_path">
                                     <img v-else width="185" src="/static/poster_placeholder.jpg">
                                 </div>
-                                <div class="col-sm-8">
+                                <div class="col-sm-8 align-self-center">
                                     <p v-html="overview"></p>
                                     <p>
                                         <b>Rating</b>: {{ vote_average }} / 10
