@@ -20,8 +20,8 @@
                         <div class="modal-footer">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img v-if="poster_path" :src="'https://image.tmdb.org/t/p/w185/' + poster_path">
-                                    <img v-else width="185" src="/static/poster_placeholder.jpg">
+                                    <img class="mb-2" v-if="poster_path" :src="'https://image.tmdb.org/t/p/w185/' + poster_path">
+                                    <img class="mb-2" v-else width="185" src="/static/poster_placeholder.jpg">
                                 </div>
                                 <div class="col-sm-8 align-self-center">
                                     <p v-html="overview"></p>
